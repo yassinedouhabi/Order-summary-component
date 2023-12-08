@@ -1,0 +1,126 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Destructed-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--Pale-blue);
+  height: 100dvh;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.order {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 20px;
+}
+img {
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--Dark-blue);
+  margin-bottom: 10px;
+  text-align: center;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--Destructed-blue);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.order-plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(224deg 23% 55% / 8%);
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 10px;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  margin-left: 20px;
+}
+.plan-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--Destructed-blue);
+}
+.order-plan a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--Bright-blue);
+  cursor: pointer;
+}
+.order-plan a:hover {
+  color: var(--Dark-blue);
+}
+.btn {
+  border: 0;
+  outline: 0;
+  background-color: blue;
+  padding: 15px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--Pale-blue);
+  cursor: pointer;
+  border-radius: 14px;
+  box-shadow: 0px 8px 36px -10px hsl(245, 75%, 52%);
+}
+.btn:hover {
+  background-color: var(--Dark-blue);
+  box-shadow: 0px 8px 36px -10px var(--Dark-blue);
+}
+.cancel {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--Destructed-blue);
+  cursor: pointer;
+}
+.cancel:hover {
+  color: var(--Dark-blue);
+}
